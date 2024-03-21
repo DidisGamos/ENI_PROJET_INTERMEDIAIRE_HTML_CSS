@@ -1,0 +1,387 @@
+@import url("font.css");
+
+*, ::before, ::after {
+    font-family: Poppins;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f1f1f1;
+}
+
+/* ---------------------------Entête------------------------------- */
+.head-main {
+    width: 100%;
+    height: 915px;
+    background-image: url('../Assets/Background.png');
+    background-size: cover ;
+    background-attachment : fixed ;
+    background-position : center;
+    padding: 5px;
+    padding-bottom: 0px;
+    position: relative;
+    overflow : hidden;
+}
+
+.head-center {
+    width: 85%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    padding-bottom: 0;
+    position: relative;
+}
+        /* ---------------Logo hamberger--------------- */
+        
+.logo-hamberger {
+    position : absolute ;
+    top :40px;
+    right: 60px;
+    display: none;
+}
+        /* ------x---------Logo hamberger------x--------- */
+        
+        /* ---------------Partie flexbox--------------- */
+.flex-head {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-head {
+    display: flex;
+}
+
+.sign, .btn-start {
+    margin : 15px
+}
+
+.sign {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    /* background: #f1f1f1; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sign a {
+    text-decoration: none;
+    color : gray ;
+}
+
+.btn-start {
+    width: 280px;
+    background: #000;
+    border-radius: 5px;
+    color: gray;
+    padding: 25px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.start {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+        /* ---------------Partie flexbox--------------- */
+
+.head-txt{
+    width: 60%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: 30px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.txt-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-title h1 {
+    font-size: 55px;
+    font-family: 'Poppins bolder';
+}
+
+.txt-title p {
+    font-size: 18px;
+    color: #484646;
+}
+
+.flex-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-txt .txt-end {
+    font-size: 20px;
+    color: #484646;
+}
+
+.final-img-head {
+    width: 100%;
+}
+
+.final-img-head .img-final {
+    margin-top: 30px;    
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* -------------x----------Entête----------x------------------ */
+/* ------------------------Section-flex----------------------- */
+.section-flex {
+    width: 85%;
+    height: auto;
+    margin : 80px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-flex .section-txt {
+    width: 740px;
+}
+
+.section-txt h2 {
+    font-size: 40px;
+    font-family: 'Poppins bolder';
+}
+
+.section-txt p {
+    font-size: 23px;
+    color : #484646;
+}
+
+.section-txt .btn-start {
+    width: 280px;
+    padding: 25px;
+}
+
+.section-flex .section-img {
+    width: 500px;
+    padding: 5px;
+}
+
+.section-img .customizable {
+    width: 490px;
+}
+/* -----------------x-----------Section-flex--------------x----------------- */
+.end {
+    width: 85%;
+    height: auto;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.end .logo-snipper {
+    padding: 10px;
+}
+
+.end .txt-end {
+    display: flex;
+    align-items: flex-start;
+}
+
+.txt-end p  {
+    margin : 10px ;
+    font-size: 20px;
+    color: #484646;
+}
+
+@media only screen and (max-width : 1300px) {
+    .section-txt h2 {
+        font-size: 2rem;
+    }
+
+    .section-txt p {
+        font-size: 18px;
+    }
+    
+    .btn-start, .section-txt .btn-start {
+        width : 200px ;
+        padding : 15px ;
+        font-size : 16px ;
+    }
+}
+@media only screen and (max-width : 1260px){
+    .head-main {
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width : 1200px){
+    .head-main {
+        height: 850px;
+    }
+}
+
+@media only screen and (max-width : 1000px){
+    .head-main {
+        height: 800px;
+    }
+}
+
+@media  screen and (max-width : 960px) {
+    .head-main {
+        height: 760px;
+    }
+    .head-center {
+        width: 100%;
+    }
+
+    .head-txt {
+        width: 90%;
+    }
+
+    .section-flex {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width :760px){
+    .btn-start {
+        width: 200px;
+        font-size: 16px;
+    }
+    .section-flex {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .section-flex .section-txt {
+        width: 100%;
+    }
+
+    .section-txt h2 {
+        font-size: 40px;
+    }
+
+    .section-txt .btn-start {
+        width: 280px;
+        padding: 18px;
+    }
+
+    .section-flex .section-img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section-img .customizable {
+        width: 80%;
+    }
+
+    .end {
+        width: 100%;
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 680px){
+    .end {
+        width : 100%;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .txt-end {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width : 510px){
+    .head-main {
+        padding : 2px;
+    }
+    
+    .head-center {
+        width : 100% ;
+        padding : 5px ;
+    }
+    
+    .logo-hamberger {
+        display : block;
+        top : 25px ;
+        right : 10px ;  
+    }
+    
+    .btn-head {
+        display : none ;
+    }
+
+    
+    .head-txt {
+        width: 100%;
+        margin : 30px 0 ;
+        padding: 5px ;
+    }
+    
+    .txt-title {
+        width : 100% ;
+        display : block ;
+    }
+    
+    .txt-title h1 {
+        font-size : 55px ;
+    }
+    
+    .txt-title p {
+        font-size : 20px ;
+    }
+
+    .btn-start {
+        width: 280px;
+        padding: 18px;
+        font-size: 20px;
+    }
+
+    .flex-txt .btn-start {
+        display: block;
+        width : 100% ;
+    }
+
+    .section-flex {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .end {
+        width : 100%;
+        padding: 5px;
+        flex-direction: column;
+    }
+    
+    .txt-end p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+    .txt-end p {
+        font-size: 14px;
+    }
+}
